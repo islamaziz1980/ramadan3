@@ -1,0 +1,35 @@
+#mosque-45 {
+    height: calc(58% - 2px);
+    animation: bgLoad-43 2s ease;
+    inset-block-end: 1px;
+    inset-inline-start: 2px;
+}
+.chart-anim {
+    background: #0d8f75;
+    inset-block-end: 5px;
+    inset-inline: 0;
+    z-index: 2;
+}
+.w-50px {
+    width: 50px!important;
+}
+.position-absolute {
+    position: absolute!important;
+}
+.chart-value {
+    inset-block-end: -31%;
+}
+.chart-value {
+    display: grid;
+    font-size: 12px;
+    inset: 0;
+    place-content: center;
+    z-index: 3;
+}
+.font-weight-semibold {
+    font-family: AdelleSansARA-Semibold;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+}
