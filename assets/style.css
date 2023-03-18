@@ -256,7 +256,7 @@ body.body-all-prj{ background: url(../assets/frontend/pages/img/rama-projs/all-p
 .progress-bar {
   text-align: left;
   transition-duration: 3s;
-  background: #87786C;
+  background: #87786C !important;
   border-radius: 10px !important;
 }
 .bar-comp {padding-left: 25px;}
@@ -1276,7 +1276,7 @@ select {
   .sub-all-prj {padding: 0.2em 3em !important;font-size: 18px !important;}
   .project-tit-top { margin-top: -190px;}
   .pro-action {text-align:center;}
-  .don-other{width: auto; display: inline-block; margin-top: 0px !important;}
+  .don-other{width: auto; display: inline-block; margin-top: 0px !important; height: 35px;}
 
   .group-butz {padding-right: 0;}
   .pr-roz {margin-bottom: 0;}
@@ -1596,15 +1596,15 @@ select {
   }
   .pro-day-bg{ background: url(../assets/frontend/pages/img/ramadan/Half-MoonMoon2.svg) no-repeat top center ;    height:88px;margin-top: 110px;line-height: 28px; }
   .num-day {
-    font-size: 28px;
-  padding-top: 15px;
-  padding-left: 26px;
+    font-size: 25px;
+padding-top: 18px;
+padding-left: 26px;
   }
   .ra-month {
-      font-size: 20.5px;
-      padding-left: 30px;
-      padding-top: 0px;
-}
+    font-size: 16.5px;
+padding-left: 30px;
+padding-top: 0px;
+margin-top: -10px;
 .pr-roz {
     margin-top: 29px;
 }
@@ -1656,7 +1656,9 @@ select {
 {
 .prj-closz {margin-top: 5.9em !important;margin-right: 1.6em!important;}
 .payz-tabz>li>a {padding: 1.5rem 2.2em !important;width: fit-content;}
-
+.prj-img-tit img {   max-width: 260px !important;}
+.prj-dekp, .prj-num, .prj-donate, .prj-act {width: 260px !important;}
+.totalz{ padding-left: 0px !important;}
 }
 
 /******************************/
@@ -1687,6 +1689,7 @@ select {
     }
     .head-bg {height: 290px !important;}
     .payz-tabz>li>a {padding: 1.5rem 2em !important;width: fit-content;}
+    .btn-all-prj {padding: 6px 6px;}
 
 }
 /*******************************************/
@@ -1696,7 +1699,7 @@ select {
 margin-right: 0.3em!important;}
 .payz-tabz>li>a {padding: 1.5rem 1.8em !important;width: fit-content;}
 .prj-titlo { font-size: 21px;}
-
+.sub-all-prj {padding: 0.2em 2em !important;}
 }
 /**************************************/
 @media only screen and (max-width: 341px)
