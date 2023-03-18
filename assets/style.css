@@ -244,7 +244,15 @@ body.body-all-prj{ background: url(../assets/frontend/pages/img/rama-projs/all-p
   margin: 0  0 0 9px;
   color: #1a1a1a;
 }
-
+.bar-comp .skill .val {
+  margin: 0  0 0 3px;
+}
+.bar-comp .progress-bar {
+    background: #6AA664;
+}
+.ti-mon-comp { display: block; color: #87786C !important;}
+.pro-precen-comp .num-remin { text-align: center;}
+.pro-precen-comp .num-collec { text-align: center;}
 .progress-bar {
   text-align: left;
   transition-duration: 3s;
@@ -852,6 +860,8 @@ a.share-all-log { border-color: #F26530!important;background-color: #F26530; col
 a.share-all-log:hover { border-color: #DF491B !important;background-color: #DF491B!important; color: #FFFFFF!important;padding: 6px 17px!important;}
 a.share-all-log:focus{ border-color: #F26530!important;background-color: #F26530!important; color: #FFFFFF!important; }
 a.share-all-log:active { border-color: #F26530!important;background-color: #F26530!important; color: #FFFFFF!important; }
+.cvcvcv{    position: absolute; width: 138px; height: 37px; margin-right: 27px ;margin-top: 30px;}
+
 /*************Box Cards *****************/
 .box {
   width: fit-content;
@@ -1103,6 +1113,7 @@ a.share-log:active { border-color: #F26530!important;background-color: #F26530!i
     text-decoration: none;
 }
 .rido {float: right;}
+
 /************select ***************/
 select {
   /* reset */
@@ -1184,7 +1195,11 @@ select {
 }
 .pagein { margin: 15px 0px;}
 /* end grouping system */
+/********************************************/
 
+
+
+/*************************************
 
 /* responsive */
 @media (max-width: 1199.98px) {
@@ -1211,6 +1226,7 @@ select {
     z-index: 20;}
     .det-donz-prj {padding: 0.2em 1.6em;}
     .payz-tabz>li>a {padding: 1.5rem 11.3rem !important;}
+    .cvcvcv{ margin-right: 28%}
 }
 
 /*********************************************************/
@@ -1220,26 +1236,32 @@ select {
 .payz-tabz>li>a {
     padding: 1.5rem 11.2rem !important;
 }
+
 }
 /****************************************************/
 @media (max-width: 913px) {
 .payz-tabz>li>a {
     padding: 1.5rem 10.6rem !important;
 }
+.cvcvcv{ margin-right: 27%}
 }
  /***********************************************/
  @media (max-width: 875px) {
  .nav-tabs>li>a {padding: 1.5rem 8rem !important;}
  .prj-dat {margin-right: 1em;}
+ .cvcvcv{ margin-right: 26%}
+
 }
 /*********************************************************/
 @media only screen and (max-width: 821px)
 {
 .payz-tabz>li>a {padding: 1.5rem 6.4em !important;width: fit-content;}
+ .cvcvcv{ margin-right: 24.5%}
 }
 /************************************************/
 
 @media (max-width: 769px) {
+  .pro-precen-comp{ margin-bottom: 20px;}
   .nav-tabs>li>a {margin-left: 0px !important;}
   .prj-img-tit img {max-width: 100%;}
   .prj-dekp, .prj-num, .prj-donate,.prj-act{ width: 300px;}
@@ -1386,7 +1408,7 @@ select {
     padding: 1.5rem 5.8em !important;
     width: fit-content;
 }
-
+ .cvcvcv{ margin-right: 22.8%}
 }
 /**********************************/
 @media only screen and (max-width: 700px){
@@ -1405,6 +1427,7 @@ select {
     margin-top: 6.31em;
     margin-right: 12.2em;
 }
+.cvcvcv {margin-right: 19.8%;}
 }
 
 /********************************************/
@@ -1432,6 +1455,7 @@ select {
     padding-bottom: 15px;
     font-size: 24px;
 }
+.cvcvcv {margin-right: 17.8%;}
 }
 
 /********************************************/
@@ -1450,13 +1474,8 @@ select {
      margin-top: 6.31em!important;
      margin-right: 8.2em!important;
  }
-}
-/*******************************************/
-
-@media only screen and (max-width: 541px){
-.prj-closz {
-    margin-top: 6.6em!important;
-    margin-right: 5.9em!important;
+ .cvcvcv {
+    margin-right: 15%;
 }
 }
 /*******************************************/
@@ -1475,11 +1494,26 @@ select {
      margin-right: 6.2em;
  }
 }
+/*******************************************/
+
+@media only screen and (max-width: 541px){
+.prj-closz {
+    margin-top: 6.6em!important;
+    margin-right: 5.9em!important;
+}
+.cvcvcv {
+   margin-right: 11%;
+}
+}
+
 /******************************************/
 @media only screen and (max-width: 512px){
   .my_bg {
       height: auto;
       background-size: cover;
+  }
+  .cvcvcv {
+     margin-right: 9%;
   }
 }
 /********************************************/
@@ -1518,6 +1552,9 @@ select {
     padding: 1.5rem 3rem !important;
     font-size: 21px !important;
 }
+.cvcvcv {
+   margin-right: 8%;
+}
 }
 /***********************************/
 
@@ -1546,6 +1583,9 @@ select {
 }
 .project-tit-top {margin-top: -210px!important;}
   .don-other { width:80px !important;;}
+  .cvcvcv {
+     margin-right: 6%;
+  }
 }
 /****************************************/
 @media only screen and (max-width: 426px){
@@ -1600,6 +1640,7 @@ select {
 .head-bg {height: 295px !important;}
 .project-tit-top {margin-top: -170px !important;}
 .all-prj-other { margin-right: 20px;}
+.cvcvcv { margin-right: 0px;}
 }
 /*****************************************/
 @media only screen and (max-width: 413px)
