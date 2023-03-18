@@ -200,16 +200,18 @@ body.body-all-prj{ background: url(../assets/frontend/pages/img/rama-projs/all-p
 .num-day{font-family: 'Inter', sans-serif; font-size: 38px; font-weight: 600;color:var(--secondary2);padding-top:30px;padding-left: 53px;}
 .ra-month{font-size: 28.5px; font-weight: 600;color:var(--secondary2);    padding-left: 60px;padding-top:10px; }
 /************************* Details *****************/
-.prj-titlo { font-size: 18px; color:var(--secondary2); font-weight: 700;}
+.prj-titlo { font-size: 24px; color:var(--secondary2); font-weight: 700;}
 .prj-share {text-align: left; padding-left: 35px;}
 .prj-share a:hover {text-align: left; padding-left: 35px;}
 .num-collec, .num-remin{ color: var(--secondary);font-size: 12px; font-weight: 700;}
+.num-collec { text-align: right; padding-right: 0px; }
+.num-remin{ text-align: left;padding-left: 25px; }
 .num-collec span, .num-remin span{ color: var(--body_text);}
 .num-collec span.dad, .num-remin span.dad{ font-family: var( --font)}
 .pro-decso{ padding: 10px 0 ;}
-.pro-action{ padding: 25px 10px;}
+.pro-action{ padding: 25px 10px; text-align: center;}
 .group-butz button { border: 1px solid var(--primary) ; color: var(--primary) }
-.don-other{    display: inline-block; height: 2.4em;border:1px solid var(--primary) !important; width: 120px !important;font-family: var( --font) !important; color: #6C727F!important; border-radius: 5px!important;}
+.don-other{    display: inline-block; height: 2.4em;border:1px solid var(--primary) !important; width: 140px !important;font-family: var( --font) !important; color: #6C727F!important; border-radius: 5px!important;}
 .project-det-bg{ background: #FFF8F6; border-left: 8.91px solid #685A4D;border-right: 8.91px solid #685A4D;border-bottom: 8.91px solid #685A4D;width: 954px; }
 .group-butz { padding-right: 40px;}
 .group-method {background:#ffffff !important; border:1px solid var(--primary)!important; border-radius: 29px !important;}
@@ -246,9 +248,10 @@ body.body-all-prj{ background: url(../assets/frontend/pages/img/rama-projs/all-p
 .progress-bar {
   text-align: left;
   transition-duration: 3s;
-  background: #D9D9D9;
+  background: #87786C;
+  border-radius: 10px !important;
 }
-.bar-comp { padding-top: 1587786Cpx;}
+.bar-comp {padding-left: 25px;}
 .pr-roz { margin-bottom: 25px;}
  /**********bottom action *************/
  .my_bg {
@@ -283,10 +286,9 @@ body.body-all-prj{ background: url(../assets/frontend/pages/img/rama-projs/all-p
                   margin-top: 1em;
           }
       .complete_btn:hover {
-        color: #6C727F !important;
-        background-color: #ffffff;
-        border-color: #6C727F; /*set the color you want here*/
-              }
+        color: #ffffff !important;
+        background-color: var(--on_hover);}
+
       .complete_btn:focus {
         color: #FFFFFF !important;
         background-color: var(--primary);
@@ -824,6 +826,7 @@ font-family: 'Inter', sans-serif;font-weight: bold;font-size: 13px;margin-right:
     font-size: 20px;
     font-weight: 600;
   }
+  .don-other{margin-top: -2px;}
 .prj-dekp { background: #ffffff; color: #363636; font-size: 12px; font-weight: 600; width:300px; margin: auto; padding:10px 5px; border-bottom: 1px solid #FDD8CA;text-align: center;
     line-height: 20px;}
 .prj-dekp>a {color: #363636;}
@@ -910,6 +913,7 @@ a.share-all-log:active { border-color: #F26530!important;background-color: #F265
     color: var(--links);
     font-size: 18px;
 }
+.all-prj-other{ width: 107px !important; }
 /******************Face + google ************************/
 a.share-log { border-color: #F26530!important;background-color: #FFFFFF; color: #F26530!important; border-radius: 0.7em !important; font-weight: 700;width: 46.4px!important;}
 a.share-log:hover { border-color: #DF491B !important;background-color: #DF491B!important; color: #FFFFFF!important;padding: 6px 17px!important;}
@@ -1152,6 +1156,7 @@ select {
     -ms-background-size: 100% 100%;
     background-size: 100% 100%;
 }
+  .pro-precen { padding-left: 15px; padding-right: 15px;}
 /*********************closed ********************/
 .prj-closz { background:url(../assets/frontend/pages/img/rama-projs/done.svg) no-repeat top center; width:86px; height:39px; position: absolute; margin-top: 6.5em;
     margin-right: 2.4em;z-index: 20;}
@@ -1216,29 +1221,41 @@ select {
     padding: 1.5rem 11.2rem !important;
 }
 }
+/****************************************************/
+@media (max-width: 913px) {
+.payz-tabz>li>a {
+    padding: 1.5rem 10.6rem !important;
+}
+}
  /***********************************************/
  @media (max-width: 875px) {
  .nav-tabs>li>a {padding: 1.5rem 8rem !important;}
  .prj-dat {margin-right: 1em;}
 }
+/*********************************************************/
+@media only screen and (max-width: 821px)
+{
+.payz-tabz>li>a {padding: 1.5rem 6.4em !important;width: fit-content;}
+}
 /************************************************/
 
-@media (max-width: 767.98px) {
+@media (max-width: 769px) {
   .nav-tabs>li>a {margin-left: 0px !important;}
   .prj-img-tit img {max-width: 100%;}
   .prj-dekp, .prj-num, .prj-donate,.prj-act{ width: 300px;}
-  .btn-all-prj{ padding: 6px 12px;margin-bottom: 1px;}
+  .btn-all-prj{ padding: 6px 12px;margin-bottom: 1px;margin-left: 5px;}
   .prj-tik { margin-top: 15px !important;}
   .prj-closz {
       margin-top: 6.31em;
       margin-right: 14.6em;
   }
   .prj-dat {margin-right: 16em;}
-  .all-prj-other{ width: 120px !important; }
-  .sub-all-prj {padding: 0.2em 4em !important;}
+  .all-prj-other{ width: 95px !important; }
+  .sub-all-prj {padding: 0.2em 3em !important;font-size: 18px !important;}
   .project-tit-top { margin-top: -190px;}
   .pro-action {text-align:center;}
-  .don-other{width: auto; display: inline-block;}
+  .don-other{width: auto; display: inline-block; margin-top: 0px !important;}
+
   .group-butz {padding-right: 0;}
   .pr-roz {margin-bottom: 0;}
   .pro-action {padding-bottom: 10px;}
@@ -1287,8 +1304,8 @@ select {
         font-size: 16px;
     }
 
-
-
+.group-lab {display: inline-flex;}
+.group-butz{display: inline-flex;}
 
     .flag-link,
     .cart {
@@ -1365,6 +1382,10 @@ select {
 .tabs-all-prj>li {margin-bottom: -4px !important;}
 .project-tit-top {margin-top: -160px !important;}
 .head-bg-cont h2{width: 61%;margin: auto; padding-bottom: 15px;}
+.payz-tabz>li>a {
+    padding: 1.5rem 5.8em !important;
+    width: fit-content;
+}
 
 }
 /**********************************/
@@ -1398,7 +1419,7 @@ select {
 .nav-tabs>li>a {
      padding: 1.5rem 5.6rem !important;
     /* font-size: 20px!important;*/
-    
+
  }
  .prj-dat {margin-right: 11em;}
  .prj-closz {
@@ -1524,6 +1545,7 @@ select {
     font-size: 15px !important;
 }
 .project-tit-top {margin-top: -210px!important;}
+  .don-other { width:80px !important;;}
 }
 /****************************************/
 @media only screen and (max-width: 426px){
@@ -1534,14 +1556,14 @@ select {
   }
   .pro-day-bg{ background: url(../assets/frontend/pages/img/ramadan/Half-MoonMoon2.svg) no-repeat top center ;    height:88px;margin-top: 110px;line-height: 28px; }
   .num-day {
-      font-size: 28px;
-      padding-top: 15px;
-      padding-left: 53px;
+    font-size: 28px;
+  padding-top: 15px;
+  padding-left: 26px;
   }
   .ra-month {
-    font-size: 20.5px;
-    padding-left: 60px;
-    padding-top: 0px;
+      font-size: 20.5px;
+      padding-left: 30px;
+      padding-top: 0px;
 }
 .pr-roz {
     margin-top: 29px;
@@ -1580,12 +1602,11 @@ select {
 .all-prj-other { margin-right: 20px;}
 }
 /*****************************************/
-@media only screen and (max-width: 412px)
+@media only screen and (max-width: 413px)
 {
-.prj-closz {
-    margin-top: 6.1em !important;
-    margin-right: 2.3em!important;
-}
+.payz-tabz>li>a {padding: 1.5rem 2.5em !important;width: fit-content;}
+.ti-mon{ display: block;}
+.num-collec, .num-remin {text-align: center !important;}
 }
 
 /********************************************/
@@ -1593,7 +1614,7 @@ select {
 @media only screen and (max-width: 395px)
 {
 .prj-closz {margin-top: 5.9em !important;margin-right: 1.6em!important;}
-.payz-tabz>li>a {padding: 1.5rem 2.7em !important;width: fit-content;}
+.payz-tabz>li>a {padding: 1.5rem 2.2em !important;width: fit-content;}
 
 }
 
@@ -1632,7 +1653,9 @@ select {
 {
 .prj-closz {margin-top: 6em !important;
 margin-right: 0.3em!important;}
-.payz-tabz>li>a {padding: 1.5rem 2.2em !important;width: fit-content;}
+.payz-tabz>li>a {padding: 1.5rem 1.8em !important;width: fit-content;}
+.prj-titlo { font-size: 21px;}
+
 }
 /**************************************/
 @media only screen and (max-width: 341px)
@@ -1645,6 +1668,11 @@ margin-right: 0.3em!important;}
     border-bottom: 3.5px solid #685A4D;
 }
 .payz-tabz>li>a {padding: 1.5rem 1.87em !important;width: fit-content;}
+.don-other {
+    width: 68px !important;
+    font-size: 13px!important;
+    padding: 16px 6px;
+}
 }
 /******************************************/
 @media only screen and (max-width: 321px){
